@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SHOP.CO — Find Clothes That Match Your Style</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satoshi:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+  </head>
+  <body>
+    <!-- ============================
+     ANNOUNCEMENT BAR
+     ============================ -->
+    <div class="announcement-bar">
+      <span class="announcement-bar__text">
+        Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a>
+      </span>
+      <button
+        class="announcement-bar__close"
+        aria-label="Close"
+      >
+        &#10005;
+      </button>
+    </div>
+
+    <!-- ============================
+     NAVBAR
+     ============================ -->
+    <header class="navbar">
+      <a
+        href="#"
+        class="navbar__logo"
+        >SHOP.CO</a
+      >
+
+      <nav class="navbar__nav">
+        <a href="#">Shop <span class="chevron"></span></a>
+        <a href="#">On Sale</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Brands</a>
+      </nav>
+
+      <div class="navbar__search">
+        <svg
+          class="navbar__search__icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle
+            cx="11"
+            cy="11"
+            r="8"
+          />
+          <line
+            x1="21"
+            y1="21"
+            x2="16.65"
+            y2="16.65"
+          />
+        </svg>
+        <input
+          type="text"
+          placeholder="Search for products..."
+        />
+      </div>
+
+      <div class="navbar__icons">
+        <!-- Cart -->
+        <a
+          href="#"
+          aria-label="Cart"
+        >
+          <img
+            src="./images/cart.png"
+            alt="cart"
+          />
+        </a>
+        <!-- Account -->
+        <a
+          href="#"
+          aria-label="Account"
+        >
+          <img
+            src="./images/profile.png"
+            alt="account"
+          />
+        </a>
+      </div>
+
+      <!-- Hamburger mobile -->
+      <button
+        class="navbar__hamburger"
+        aria-label="Menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- HER0 -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Find Clothes<br />That Matches<br />Your Style
+          </h1>
+          <p class="hero__desc">
+            Browse through our diverse range of meticulously crafted garments,
+            designed to bring out your individuality and cater to your sense of
+            style.
+          </p>
+          <a
+            href="#"
+            class="btn-black"
+            >Shop Now</a
+          >
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-num">200+</div>
+              <div class="hero__stat-label">International Brands</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">2,000+</div>
+              <div class="hero__stat-label">High-Quality Products</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">30,000+</div>
+              <div class="hero__stat-label">Happy Customers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap">
+          <img
+            class="hero__image"
+            src="./images/modal_img.jpg.jpeg"
+            alt="Fashion models"
+          />
+        </div>
+
+        <img
+          src="./images/star.png"
+          class="hero__sparkle hero__sparkle--lg"
+          alt=""
+        />
+        <img
+          src="./images/star2.png"
+          class="hero__sparkle hero__sparkle--sm"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!--  BRANDS STRIP-->
+    <div class="brands-strip">
+      <div class="brands-strip__inner">
+        <span class="brands-strip__item"
+          ><img
+            class="hero__image"
+            src="./images/ver.png"
+            alt="versace"
+        /></span>
+        <span class="brands-strip__item brands-strip__item--italic"
+          ><img
+            class="hero__image"
+            src="./images/zara-logo-1 1.png"
+            alt="versace"
+        /></span>
+        <span class="brands-strip__item"
+          ><img
+            class="hero__image"
+            src="./images/gucci-logo-1 1.png"
+            alt="versace"
+        /></span>
+        <span
+          class="brands-strip__item"
+          style="font-size: 1.625rem; letter-spacing: 0.1em"
+          ><img
+            class="hero__image"
+            src="./images/prada-logo-1 1.png"
+            alt="versace"
+        /></span>
+        <span class="brands-strip__item"
+          ><img
+            class="hero__image"
+            src="./images/calvin.png"
+            alt="versace"
+        /></span>
+      </div>
+    </div>
+
+    <!--  NEW ARRIVALS-->
+    <section class="new-arrivals">
+      <div class="container">
+        <h2 class="section-heading">New Arrivals</h2>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <!-- REPLACE src -->
+              <img
+                src="./images/newarrivals1.png"
+                alt="T-shirt with Tape Details"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">T-shirt with Tape Details</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★½</span>
+                <span class="stars-label">4.5/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$120</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/newarriavals2.png"
+                alt="Skinny Fit Jeans"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Skinny Fit Jeans</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★½☆</span>
+                <span class="stars-label">3.5/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$240</span>
+                <span class="price-old">$260</span>
+                <span class="price-badge">-20%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/newarriavals3.png"
+                alt="Checkered Shirt"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Checkered Shirt</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★½</span>
+                <span class="stars-label">4.5/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$180</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/newarriavals4.png"
+                alt="Sleeve Striped T-shirt"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Sleeve Striped T-shirt</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★½</span>
+                <span class="stars-label">4.5/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$130</span>
+                <span class="price-old">$160</span>
+                <span class="price-badge">-30%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /products-grid -->
+
+        <div class="view-all-wrap">
+          <a
+            href="#"
+            class="btn-outline"
+            >View All</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--
+     TOP SELLING-->
+    <section class="top-selling">
+      <div class="container">
+        <h2 class="section-heading">Top Selling</h2>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/topselling1.png"
+                alt="Vertical Striped Shirt"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Vertical Striped Shirt</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★★</span>
+                <span class="stars-label">5.0/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$212</span>
+                <span class="price-old">$232</span>
+                <span class="price-badge">-20%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/topselling2.png"
+                alt="Courage Graphic T-shirt"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Courage Graphic T-shirt</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★☆</span>
+                <span class="stars-label">4.0/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$145</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/topselling3.png"
+                alt="Loose Fit Bermuda Shorts"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Loose Fit Bermuda Shorts</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="stars-label">3.0/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$80</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+              <img
+                src="./images/topselling4.png"
+                alt="Faded Skinny Jeans"
+              />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">Faded Skinny Jeans</div>
+              <div class="product-card__rating">
+                <span class="stars">★★★★½</span>
+                <span class="stars-label">4.5/5</span>
+              </div>
+              <div class="product-card__price">
+                <span class="price-main">$210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /products-grid -->
+
+        <div class="view-all-wrap">
+          <a
+            href="#"
+            class="btn-outline"
+            >View All</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--
+     BROWSE BY DRESS STYLE-->
+    <section class="dress-style">
+      <div class="dress-style__inner">
+        <h2 class="section-heading">Browse by Dress Style</h2>
+
+        <div class="dress-grid">
+          <div class="dress-card">
+            <img
+              src="./images/dressstyle1.png"
+              alt="Casual"
+            />
+            <span class="dress-card__label">Casual</span>
+          </div>
+
+          <div class="dress-card">
+            <img
+              src="./images/dressstyle2.png"
+              alt="Formal"
+            />
+            <span class="dress-card__label">Formal</span>
+          </div>
+
+          <div class="dress-card">
+            <img
+              src="./images/dressstyle3.png"
+              alt="Party"
+            />
+            <span class="dress-card__label">Party</span>
+          </div>
+
+          <div class="dress-card">
+            <img
+              src="./images/dressstyle4.png"
+              alt="Gym"
+            />
+            <span class="dress-card__label">Gym</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  OUR HAPPY CUSTOMERS-->
+    <section class="customers">
+      <div class="container">
+        <div class="customers__header">
+          <h2 class="customers__heading">Our Happy Customers</h2>
+          <div class="customers__arrows">
+            <button
+              class="customers__arrow"
+              aria-label="Previous"
+            >
+              &#8592;
+            </button>
+            <button
+              class="customers__arrow"
+              aria-label="Next"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-card__stars">
+              <span class="stars">★★★★★</span>
+            </div>
+            <div class="review-card__name">
+              Sarah M.
+              <span class="verified">&#10003;</span>
+            </div>
+            <p class="review-card__text">
+              "I'm blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece
+              I've bought has exceeded my expectations."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">
+              <span class="stars">★★★★★</span>
+            </div>
+            <div class="review-card__name">
+              Alex K.
+              <span class="verified">&#10003;</span>
+            </div>
+            <p class="review-card__text">
+              "Finding clothes that align with my personal style used to be a
+              challenge until I discovered Shop.co. The range of options they
+              offer is truly remarkable, catering to a variety of tastes and
+              occasions."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">
+              <span class="stars">★★★★★</span>
+            </div>
+            <div class="review-card__name">
+              James L.
+              <span class="verified">&#10003;</span>
+            </div>
+            <p class="review-card__text">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+     NEWSLETTER-->
+    <section class="newsletter">
+      <div class="newsletter__inner">
+        <h2 class="newsletter__title">
+          Stay Upto Date About Our Latest Offers
+        </h2>
+        <div class="newsletter__form">
+          <div class="newsletter__input-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button class="newsletter__submit">Subscribe to Newsletter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+     FOOTER
+      -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__col footer__brand-col">
+            <div class="footer__brand-logo">SHOP.CO</div>
+            <p class="footer__brand-desc">
+              We have clothes that suits your style and which you're proud to
+              wear. From women to men.
+            </p>
+            <div class="footer__social">
+              <a
+                href="#"
+                aria-label="Twitter"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    ry="5"
+                  />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line
+                    x1="17.5"
+                    y1="6.5"
+                    x2="17.51"
+                    y2="6.5"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="GitHub"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Company</div>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Help</div>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">FAQ</div>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Resources</div>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to - Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /footer__top -->
+
+        <div class="footer__bottom">
+          <p class="footer__bottom-copy">
+            Shop.co © 2000-2023, All Rights Reserved
+          </p>
+          <div class="footer__payments">
+            <span class="payment-icon">
+              <img
+                src="./images/Visa.png"
+                alt="Gym"
+            /></span>
+            <span class="payment-icon">
+              <img
+                src="./images/Mastercard.png"
+                alt="Gym"
+            /></span>
+            <span class="payment-icon">
+              <img
+                src="./images/Paypal.png"
+                alt="Gym"
+            /></span>
+            <span class="payment-icon">
+              <img
+                src="./images/applePay.png"
+                alt="Gym"
+            /></span>
+            <span class="payment-icon">
+              <img
+                src="./images/G Pay.png"
+                alt="Gym"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
