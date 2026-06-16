@@ -1,29 +1,46 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Satoshi:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { 
+  font-size: 16px; scroll-behavior: smooth; 
+}
 body {
-  font-family: 'Satoshi', 'Inter', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', Arial, sans-serif;
   color: #000000;
-  background: #ffffff;
+  background: var(--white);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-a { text-decoration: none; color: inherit; }
-img { max-width: 100%; display: block; }
-ul, ol { list-style: none; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
-input, textarea { font-family: inherit; outline: none; }
+a { 
+  text-decoration: none; color: inherit; 
+}
+img { 
+  max-width: 100%;
+  display: block;
+ }
+ul, ol {
+  list-style: none;
+   }
+button {
+   cursor: pointer; 
+   border: none; 
+   background: none; 
+   font-family: inherit;
+   }
+input { 
+  font-family: inherit;
+  outline: none;
+ }
 
-/* Color Tokens*/
+
 :root {
+  --font-heading: 'Anton', Arial Black, sans-serif;    
   --black: #000000;
   --white: #ffffff;
   --bg-light: #F2F0F1;
@@ -37,7 +54,7 @@ input, textarea { font-family: inherit; outline: none; }
   --green: #01AB31;
 }
 
-/*  Layout Container */
+/*  layout Container */
 .container {
   width: 100%;
   max-width: 1240px;
@@ -45,9 +62,9 @@ input, textarea { font-family: inherit; outline: none; }
   padding: 0 48px;
 }
 
-/* Section Heading  */
+/* section Heading  */
 .section-heading {
-  font-family: 'Satoshi', Arial Black, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial Black, sans-serif;
   font-weight: 900;
   font-size: 2.25rem;
   letter-spacing: 0.03em;
@@ -63,7 +80,7 @@ input, textarea { font-family: inherit; outline: none; }
   align-items: center;
   justify-content: center;
   background: #000000;
-  color: #ffffff;
+  color: var(--white);
   border: 1.5px solid #000000;
   border-radius: 62px;
   padding: 16px 54px;
@@ -86,9 +103,9 @@ input, textarea { font-family: inherit; outline: none; }
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
-.btn-outline:hover { background: #000; color: #fff; }
+.btn-outline:hover { background: #000; color: var(--white); }
 
-/* Stars */
+/* stars */
 .stars {
   display: inline-flex;
   gap: 2px;
